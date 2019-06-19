@@ -13,6 +13,7 @@ a{
     color: inherit;
 }
 
+
 .icon{
     border: 1px solid $primary-color;
     border-radius: 50%;
@@ -29,19 +30,38 @@ i{
     color: $primary-color;
 }
 
-.container{
-    max-width: 1000px;
-    margin: 0 auto;
+
+.btn{
+    background: $background-color-btn;
+    padding: get-padding(1) get-padding(2);
+    border: 3px solid $white;
+    border-radius: 16px;
+    font-weight: bold;
+    color: $text-color-primary;
+    text-align: center;
+    &:hover{
+        border: 3px solid $text-color-primary;
+        cursor: pointer;
+    }
 }
+
+
+
+
+
 
 /*--------------- Top Bar Styles
  ------------------------------------------*/
-.top-bar{
+.top-bar-container{
     background: $background-color-secondary;
-    color: $text-color-secondary;
+}
+.top-bar{
+    margin: 0 auto;
+    color: $white;
     display: flex;
     border-radius: 0 0 8px 8px;
     flex-direction: column;
+    max-width: $max-width;
     align-items: center;
     justify-content: space-between;
     padding: get-padding(1);
@@ -57,24 +77,222 @@ i{
             }
         }
     }
+}
+/*--------------- End Of Top Bar Styles ---------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- Main Nav Bar Styles
+ ------------------------------------------*/
+.main-nav-container{
+    background: $background-color-primary;
+
+
+}
+.main-nav{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    max-width: $max-width;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: get-padding(2);
+    #navOpenBtn{
+        font-size: 1.5em;
+        color: $text-color-primary;
+    }
+    #navCloseBtn{
+        font-size: 1.5em;
+        color: $white;
+        position: fixed;
+        padding: get-padding(2);
+        top: 0;
+        right: 0;
+    }
+    .logo{
+        max-width: 100px;
+    }
+
+    .nav-items{
+        font-size: 1.2em;
+        list-style: none;
+        display: flex;
+    }
+
+    .navButtons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 250px){
+            order: 1;
+            flex-basis: 100%;
+        }
+    }
 
 }
 
+/*--------------- End Of Nav Bar Styles ----------------------------*/
 
-/*--------------- End Of Top Bar Styles
- ------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /*--------------- Media Queries
  ------------------------------------------*/
-@media (min-width: 399px){
+@media (max-width: 599px) { // for nav bar
+    .nav-items{
+        background: $background-color-secondary;
+        color: $white;
+        position: fixed;
+        top: 0;
+        //padding: get-padding(10) get-padding(4);
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        right: 0;
+        flex-direction: column;
+        height: 100vh;
+        width: 80vw;
+        padding: 0 get-padding(2);
+        flex-wrap: wrap;
+        li{
+            margin: get-margin(2) 0;
+        }
+        transform: translateX(100%);
+
+        &.open{
+            transform: translateX(0);
+        }
+    }
+    .btn{
+        margin: get-margin(2) 0;
+        order: 1;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 600px) { // for nav bar
+    .main-nav{
+        flex-direction: column;
+
+        .logo{
+            max-width: 200px;
+            margin-bottom: get-margin(2);
+        }
+
+        #navOpenBtn, #navCloseBtn{
+            display: none;
+        }
+
+        .nav-items{
+            //background: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            //.btn{
+            //    flex-basis: 100%;
+            //}
+            li{
+                padding: get-padding(1);
+            }
+
+        }
+        .navButtons{
+            margin-top: get-margin(2);
+        }
+    }
+}
+
+@media (min-width: 1099px) { // for nav bar
+    .main-nav{
+        max-width: $max-width;
+        flex-direction: row;
+        align-items: center;
+
+        .logo{
+            max-width: 200px;
+        }
+
+        #navOpenBtn, #navCloseBtn{
+            display: none;
+        }
+
+        .nav-items{
+            //background: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            //.btn{
+            //    flex-basis: 100%;
+            //}
+            li{
+                padding: get-padding(1);
+
+            }
+
+        }
+        .navButtons{
+            flex-basis: 100%;
+            justify-content: flex-end;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 400px){
     .top-bar{
         .contact-info{
             flex-direction: row;
-
         }
     }
+
 }
 
 @media (min-width: 599px){

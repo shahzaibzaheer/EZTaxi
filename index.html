@@ -10,45 +10,52 @@
     <link rel="stylesheet" href="stylesheets/css/main.css">
 </head>
 <body>
-<div class="container">
-<nav class="top-bar">
+    <nav class="top-bar-container">
+        <div class="top-bar">
+            <div class="contact-info">
+                <a href="mailto:easytaxi@hotmail.com" class="info-item">
+                    <i class="fa fa-envelope"></i>
+                    <span>easytaxi@hotmail.com</span>
+                </a>
+                <a href="tel:123456789" class="info-item">
+                    <i class="fa fa-phone-alt"></i>
+                    <span>+92123456789</span>
+                </a>
+            </div>
 
-        <div class="contact-info">
-            <a href="mailto:easytaxi@hotmail.com" class="info-item">
-                <i class="fa fa-envelope"></i>
-                <span>easytaxi@hotmail.com</span>
-            </a>
-            <a href="tel:123456789" class="info-item">
-                <i class="fa fa-phone-alt"></i>
-                <span>+92123456789</span>
-            </a>
+            <div class="social-links">
+                <i class="fab fa-instagram icon"></i>
+                <i class="fab fa-facebook-f icon"></i>
+                <i class="fab fa-twitter icon"></i>
+            </div>
+        </div>
+    </nav>
+
+
+
+<nav class="main-nav-container">
+    <div class="main-nav">
+        <img src="images/logo.png" class="logo" alt="">
+    <!--    open-->
+        <ul class="nav-items ">
+            <i class="fa fa-times" id="navCloseBtn"></i>
+            <li>Home</li>
+            <li>About </li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Location & Pricing</li>
+            <li>Gallery</li>
+            <li>Contact us</li>
+
+        </ul>
+        <div class="navButtons">
+            <a href="" class="btn">عربى</a>
         </div>
 
-        <div class="social-links">
-            <i class="fab fa-instagram icon"></i>
-            <i class="fab fa-facebook-f icon"></i>
-            <i class="fab fa-twitter icon"></i>
-        </div>
+        <i class="fa fa-bars" id="navOpenBtn"></i>
+    </div>
 </nav>
-</div>
-
-
-<!--    <nav class="main-nav">-->
-<!--        <img src="images/logo.png" class="logo" alt="">-->
-<!--        <i class="fa fa-bars"></i>-->
-<!--        <ul class="nav-items">-->
-<!--            <li>Home</li>-->
-<!--            <li>About EZ Tazi</li>-->
-<!--            <li>Products</li>-->
-<!--            <li>Services</li>-->
-<!--            <li>Location & Pricing</li>-->
-<!--            <li>Gallery</li>-->
-<!--            <li>Contact us</li>-->
-<!--        </ul>-->
-<!--        <div class="nav-buttons">-->
-<!--            <a href="">عربى</a>-->
-<!--        </div>-->
-<!--    </nav>-->
-
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
