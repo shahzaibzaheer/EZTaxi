@@ -1,0 +1,60 @@
+* {
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.icon {
+  border: 1px solid #fbb829;
+  border-radius: 50%;
+  padding: 8px;
+  color: #fbb829;
+  font-size: 0.8em;
+  margin: 1.6px; }
+  .icon:hover {
+    background: #fbb829;
+    color: #343435; }
+
+i {
+  color: #fbb829; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+/*--------------- Top Bar Styles
+ ------------------------------------------*/
+.top-bar {
+  background: #343435;
+  color: #fff;
+  display: flex;
+  border-radius: 0 0 8px 8px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px; }
+  .top-bar .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 8px 0; }
+    .top-bar .contact-info .info-item {
+      padding: 6.4px; }
+      .top-bar .contact-info .info-item:hover {
+        color: #fbb829; }
+
+/*--------------- End Of Top Bar Styles
+ ------------------------------------------*/
+/*--------------- Media Queries
+ ------------------------------------------*/
+@media (min-width: 399px) {
+  .top-bar .contact-info {
+    flex-direction: row; } }
+@media (min-width: 599px) {
+  .top-bar {
+    flex-direction: row; } }
+/*--------------- End Of Media  Queries
+ ------------------------------------------*/
+
+/*# sourceMappingURL=main.css.map */

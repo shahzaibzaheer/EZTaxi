@@ -1,0 +1,12 @@
+@function get-padding($x){
+    @return $x*8px;
+}
+
+
+@function get-margin($x){
+    @return $x*8px;
+}
+
+@function tempColor($color: red){
+    @return rgba($color, 0.2);
+}
