@@ -1,4 +1,4 @@
-
+@import "../../vendor/bootstrap/css/bootstrap.min.css";
 @import "partials/variables";
 @import "partials/functions";
 
@@ -6,6 +6,7 @@
 *{
     margin: 0;
     //color: $text-color-primary;
+    font-family: sans-serif;
 }
 
 a{
@@ -34,7 +35,7 @@ i{
 .btn{
     background: $background-color-btn;
     padding: get-padding(1) get-padding(2);
-    border: 3px solid $white;
+    border: 3px dashed $text-color-primary;
     border-radius: 16px;
     font-weight: bold;
     color: $text-color-primary;
@@ -154,10 +155,87 @@ i{
 
 
 
+/*--------------- Section About EZ TAXI
+ ------------------------------------------*/
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .section-heading{
+        font-size: 2.5em;
+        &:before{
+            content: url("../../images/heading-before-img.png");
+            padding: get-padding(2);
+        }
+        &:after{
+            content: url("../../images/heading-before-img.png");
+            padding: get-padding(2);
+        }
+
+    }
+
+    .section-detail{
+        max-width: $max-width;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        p{
+            margin: get-margin(3) get-margin(2);
+        }
+    }
+}
+
+/*--------------- End Of Section About EZ TAXI----------------------------*/
 
 
 
 
+
+
+
+
+
+
+
+
+
+/*--------------- Section Pricing
+ ------------------------------------------*/
+
+.section-pricing{
+    background: $background-color-primary;
+
+    .nav-panel-tabs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li{
+            font-weight: bold;
+            font-size: 1.3em;
+            margin: get-margin(1) get-margin(2);
+
+            a.active{
+                @extend .btn;
+            }
+        }
+    }
+    .card{
+        .card-body{
+
+            .btn-container{
+                text-align: center;
+            }
+        }
+    }
+}
+
+/*--------------- End Of Section Pricing----------------------------*/
 
 
 

@@ -1,5 +1,7 @@
+@import url(../../vendor/bootstrap/css/bootstrap.min.css);
 * {
-  margin: 0; }
+  margin: 0;
+  font-family: sans-serif; }
 
 a {
   text-decoration: none;
@@ -19,15 +21,15 @@ a {
 i {
   color: #fbb829; }
 
-.btn {
+.btn, .section-pricing .nav-panel-tabs li a.active {
   background: linear-gradient(to bottom, #ffe546 20%, #fbb829);
   padding: 8px 16px;
-  border: 3px solid #fff;
+  border: 3px dashed #343435;
   border-radius: 16px;
   font-weight: bold;
   color: #343435;
   text-align: center; }
-  .btn:hover {
+  .btn:hover, .section-pricing .nav-panel-tabs li a.active:hover {
     border: 3px solid #343435;
     cursor: pointer; }
 
@@ -98,6 +100,48 @@ i {
         flex-basis: 100%; } }
 
 /*--------------- End Of Nav Bar Styles ----------------------------*/
+/*--------------- Section About EZ TAXI
+ ------------------------------------------*/
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  section .section-heading {
+    font-size: 2.5em; }
+    section .section-heading:before {
+      content: url("../../images/heading-before-img.png");
+      padding: 16px; }
+    section .section-heading:after {
+      content: url("../../images/heading-before-img.png");
+      padding: 16px; }
+  section .section-detail {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    section .section-detail p {
+      margin: 24px 16px; }
+
+/*--------------- End Of Section About EZ TAXI----------------------------*/
+/*--------------- Section Pricing
+ ------------------------------------------*/
+.section-pricing {
+  background: linear-gradient(to right, #ffe546, #fbb829); }
+  .section-pricing .nav-panel-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-pricing .nav-panel-tabs li {
+      font-weight: bold;
+      font-size: 1.3em;
+      margin: 8px 16px; }
+  .section-pricing .card .card-body .btn-container {
+    text-align: center; }
+
+/*--------------- End Of Section Pricing----------------------------*/
 /*--------------- Media Queries
  ------------------------------------------*/
 @media (max-width: 599px) {
@@ -121,7 +165,7 @@ i {
     .nav-items.open {
       transform: translateX(0); }
 
-  .btn {
+  .btn, .section-pricing .nav-panel-tabs li a.active {
     margin: 16px 0;
     order: 1;
     flex-basis: 100%; } }
