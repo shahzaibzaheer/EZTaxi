@@ -3,15 +3,20 @@
 @import "partials/functions";
 
 
+body{
+    font-size: 16px;
+}
 *{
     margin: 0;
-    //color: $text-color-primary;
-    font-family: sans-serif;
+    font-family: "Exo 2" ,  sans-serif;
 }
 
 a{
     text-decoration: none;
     color: inherit;
+    &:hover{
+        text-decoration: none;
+    }
 }
 
 
@@ -33,16 +38,18 @@ i{
 
 
 .btn{
-    background: $background-color-btn;
-    padding: get-padding(1) get-padding(2);
-    border: 3px dashed $text-color-primary;
+    background: $btn-background-color;
+    padding: get-padding(0.5) get-padding(2);
+    border: 3px solid lighten($dark,30%);
     border-radius: 16px;
     font-weight: bold;
-    color: $text-color-primary;
+    font-size: 1.2em;
+    color: $text-color-dark;
     text-align: center;
     &:hover{
         border: 3px solid $text-color-primary;
         cursor: pointer;
+        color: $text-color-dark;
     }
 }
 
@@ -54,34 +61,34 @@ i{
 /*--------------- Top Bar Styles
  ------------------------------------------*/
 .top-bar-container{
-    background: $background-color-secondary;
+    background: $dark;
 }
 .top-bar{
     margin: 0 auto;
-    color: $white;
+    color: $text-color-light;
     display: flex;
     border-radius: 0 0 8px 8px;
     flex-direction: column;
     max-width: $max-width;
     align-items: center;
     justify-content: space-between;
-    padding: get-padding(1);
     .contact-info{
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: get-margin(1) 0;
+
         .info-item{
-            padding: get-padding(0.8) ;
+            margin: 0 get-margin(1);
             &:hover{
                 color: $primary-color;
             }
         }
     }
+    .social-links{
+        margin: get-margin(0.6) 0;
+    }
 }
 /*--------------- End Of Top Bar Styles ---------*/
-
-
 
 
 
@@ -99,8 +106,16 @@ i{
  ------------------------------------------*/
 .main-nav-container{
     background: $background-color-primary;
+    position: relative;
 
 
+    .header-strip {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0) 25%, transparent 25%, transparent 75%, black 75%, black),
+        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+        background-size: 20px 20px;
+        background-position: 0 0, 30px 30px;
+        padding: 10px 0;
+    }
 }
 .main-nav{
     text-transform: uppercase;
@@ -113,12 +128,12 @@ i{
     flex-wrap: wrap;
     padding: get-padding(2);
     #navOpenBtn{
-        font-size: 1.5em;
+        font-size: 2em;
         color: $text-color-primary;
     }
     #navCloseBtn{
-        font-size: 1.5em;
-        color: $white;
+        font-size: 2em;
+        color: $text-color-light;
         position: fixed;
         padding: get-padding(2);
         top: 0;
@@ -157,39 +172,39 @@ i{
 
 /*--------------- Section About EZ TAXI
  ------------------------------------------*/
-section{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .section-heading{
-        font-size: 2.5em;
-        &:before{
-            content: url("../../images/heading-before-img.png");
-            padding: get-padding(2);
-        }
-        &:after{
-            content: url("../../images/heading-before-img.png");
-            padding: get-padding(2);
-        }
-
-    }
-
-    .section-detail{
-        max-width: $max-width;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-        p{
-            margin: get-margin(3) get-margin(2);
-        }
-    }
-}
+//section{
+//    width: 100vw;
+//    height: 100vh;
+//    display: flex;
+//    flex-direction: column;
+//    align-items: center;
+//    justify-content: center;
+//
+//    .section-heading{
+//        font-size: 2.5em;
+//        &:before{
+//            content: url("../../images/heading-before-img.png");
+//            padding: get-padding(2);
+//        }
+//        &:after{
+//            content: url("../../images/heading-before-img.png");
+//            padding: get-padding(2);
+//        }
+//
+//    }
+//
+//    .section-detail{
+//        max-width: $max-width;
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//
+//
+//        p{
+//            margin: get-margin(3) get-margin(2);
+//        }
+//    }
+//}
 
 /*--------------- End Of Section About EZ TAXI----------------------------*/
 
@@ -207,38 +222,47 @@ section{
 
 /*--------------- Section Pricing
  ------------------------------------------*/
-
-.section-pricing{
-    background: $background-color-primary;
-
-    .nav-panel-tabs{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        li{
-            font-weight: bold;
-            font-size: 1.3em;
-            margin: get-margin(1) get-margin(2);
-
-            a.active{
-                @extend .btn;
-            }
-        }
-    }
-    .card{
-        .card-body{
-
-            .btn-container{
-                text-align: center;
-            }
-        }
-    }
-}
+//
+//.section-pricing{
+//    background: $background-color-primary;
+//
+//    .nav-panel-tabs{
+//        display: flex;
+//        align-items: center;
+//        justify-content: center;
+//        li{
+//            font-weight: bold;
+//            font-size: 1.3em;
+//            margin: get-margin(1) get-margin(2);
+//
+//            a.active{
+//                @extend .btn;
+//            }
+//        }
+//    }
+//    .card{
+//        .card-body{
+//
+//            .btn-container{
+//                text-align: center;
+//            }
+//        }
+//    }
+//}
 
 /*--------------- End Of Section Pricing----------------------------*/
 
 
 
+#owl-products{
+    display: flex;
+    flex-direction: row;
+    background: red;
+
+    .item{
+        width: 100%;
+    }
+}
 
 
 
@@ -248,12 +272,14 @@ section{
 
 
 
-/*--------------- Media Queries
- ------------------------------------------*/
+
+
+/*----------- Media querisFor Main nav bar
+--------------------------------------------- */
 @media (max-width: 599px) { // for nav bar
     .nav-items{
-        background: $background-color-secondary;
-        color: $white;
+        background: $dark;
+        color: $text-color-light;
         position: fixed;
         top: 0;
         //padding: get-padding(10) get-padding(4);
@@ -308,11 +334,10 @@ section{
             //}
             li{
                 padding: get-padding(1);
+                font-weight: bold;
             }
-
         }
         .navButtons{
-            margin-top: get-margin(2);
         }
     }
 }
@@ -353,6 +378,8 @@ section{
 
     }
 }
+/*----------- End of Media Query for Main nav bar
+--------------------------------------------- */
 
 
 
@@ -363,11 +390,13 @@ section{
 
 
 
-
+/*--------------- Media Queries
+ ------------------------------------------*/
 @media (min-width: 400px){
     .top-bar{
         .contact-info{
             flex-direction: row;
+
         }
     }
 

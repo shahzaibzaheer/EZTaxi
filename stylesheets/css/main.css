@@ -1,11 +1,16 @@
 @import url(../../vendor/bootstrap/css/bootstrap.min.css);
+body {
+  font-size: 16px; }
+
 * {
   margin: 0;
-  font-family: sans-serif; }
+  font-family: "Exo 2" ,  sans-serif; }
 
 a {
   text-decoration: none;
   color: inherit; }
+  a:hover {
+    text-decoration: none; }
 
 .icon {
   border: 1px solid #fbb829;
@@ -21,17 +26,19 @@ a {
 i {
   color: #fbb829; }
 
-.btn, .section-pricing .nav-panel-tabs li a.active {
+.btn {
   background: linear-gradient(to bottom, #ffe546 20%, #fbb829);
-  padding: 8px 16px;
-  border: 3px dashed #343435;
+  padding: 4px 16px;
+  border: 3px solid #808082;
   border-radius: 16px;
   font-weight: bold;
+  font-size: 1.2em;
   color: #343435;
   text-align: center; }
-  .btn:hover, .section-pricing .nav-panel-tabs li a.active:hover {
+  .btn:hover {
     border: 3px solid #343435;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #343435; }
 
 /*--------------- Top Bar Styles
  ------------------------------------------*/
@@ -46,23 +53,29 @@ i {
   flex-direction: column;
   max-width: 1000px;
   align-items: center;
-  justify-content: space-between;
-  padding: 8px; }
+  justify-content: space-between; }
   .top-bar .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 8px 0; }
+    align-items: center; }
     .top-bar .contact-info .info-item {
-      padding: 6.4px; }
+      margin: 0 8px; }
       .top-bar .contact-info .info-item:hover {
         color: #fbb829; }
+  .top-bar .social-links {
+    margin: 4.8px 0; }
 
 /*--------------- End Of Top Bar Styles ---------*/
 /*--------------- Main Nav Bar Styles
  ------------------------------------------*/
 .main-nav-container {
-  background: linear-gradient(to right, #ffe546, #fbb829); }
+  background: linear-gradient(to right, #ffe546, #fbb829);
+  position: relative; }
+  .main-nav-container .header-strip {
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black);
+    background-size: 20px 20px;
+    background-position: 0 0, 30px 30px;
+    padding: 10px 0; }
 
 .main-nav {
   text-transform: uppercase;
@@ -75,10 +88,10 @@ i {
   flex-wrap: wrap;
   padding: 16px; }
   .main-nav #navOpenBtn {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #343435; }
   .main-nav #navCloseBtn {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #fff;
     position: fixed;
     padding: 16px;
@@ -102,48 +115,19 @@ i {
 /*--------------- End Of Nav Bar Styles ----------------------------*/
 /*--------------- Section About EZ TAXI
  ------------------------------------------*/
-section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  section .section-heading {
-    font-size: 2.5em; }
-    section .section-heading:before {
-      content: url("../../images/heading-before-img.png");
-      padding: 16px; }
-    section .section-heading:after {
-      content: url("../../images/heading-before-img.png");
-      padding: 16px; }
-  section .section-detail {
-    max-width: 1000px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    section .section-detail p {
-      margin: 24px 16px; }
-
 /*--------------- End Of Section About EZ TAXI----------------------------*/
 /*--------------- Section Pricing
  ------------------------------------------*/
-.section-pricing {
-  background: linear-gradient(to right, #ffe546, #fbb829); }
-  .section-pricing .nav-panel-tabs {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .section-pricing .nav-panel-tabs li {
-      font-weight: bold;
-      font-size: 1.3em;
-      margin: 8px 16px; }
-  .section-pricing .card .card-body .btn-container {
-    text-align: center; }
-
 /*--------------- End Of Section Pricing----------------------------*/
-/*--------------- Media Queries
- ------------------------------------------*/
+#owl-products {
+  display: flex;
+  flex-direction: row;
+  background: red; }
+  #owl-products .item {
+    width: 100%; }
+
+/*----------- Media querisFor Main nav bar
+--------------------------------------------- */
 @media (max-width: 599px) {
   .nav-items {
     background: #343435;
@@ -165,7 +149,7 @@ section {
     .nav-items.open {
       transform: translateX(0); }
 
-  .btn, .section-pricing .nav-panel-tabs li a.active {
+  .btn {
     margin: 16px 0;
     order: 1;
     flex-basis: 100%; } }
@@ -183,9 +167,8 @@ section {
       align-items: center;
       justify-content: center; }
       .main-nav .nav-items li {
-        padding: 8px; }
-    .main-nav .navButtons {
-      margin-top: 16px; } }
+        padding: 8px;
+        font-weight: bold; } }
 @media (min-width: 1099px) {
   .main-nav {
     max-width: 1000px;
@@ -205,6 +188,10 @@ section {
     .main-nav .navButtons {
       flex-basis: 100%;
       justify-content: flex-end; } }
+/*----------- End of Media Query for Main nav bar
+--------------------------------------------- */
+/*--------------- Media Queries
+ ------------------------------------------*/
 @media (min-width: 400px) {
   .top-bar .contact-info {
     flex-direction: row; } }

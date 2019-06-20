@@ -2,12 +2,205 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="306006ad-2f58-44a9-a025-690f361e006b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/ROADMAP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/dist/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/css/docs.theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/bird_blue_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/feature-drag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/feature-modern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/feature-module.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/feature-options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/feature-responsive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/feature-zombie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/owl-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/img/twitter_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/js/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.green.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.green.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/assets/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/owlcarousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/vendors/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/vendors/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/vendors/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/vendors/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/assets/vendors/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/animate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/autoheight.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/autoplay.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/autowidth.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/basic.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/center.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/demos.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/lazyLoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/merge.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/mousewheel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/responsive.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/rtl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/stagepadding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/urlhashnav.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/demos/video.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/api-classes.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/api-events.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/api-options.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/dev-buildin-plugins.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/dev-external.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/dev-plugin-api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/dev-styles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/started-faq.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/started-installation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/started-welcome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/support-changelog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/support-contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/docs/support-contributing.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/css/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/bird_blue_32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/download.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/feature-drag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/feature-modern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/feature-module.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/feature-options.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/feature-responsive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/feature-zombie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/owl-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/img/twitter_25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/js/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/scss/_settings.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/scss/custom.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/scss/demos.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/scss/docs.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/scss/docs.theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/scss/highlight.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/vendors/foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/vendors/highlight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/vendors/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/vendors/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/assets/vendors/jquery.mousewheel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/data/classes.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/data/events.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/data/features.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/data/options.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/helpers/modulo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/helpers/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/layouts/demos.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/layouts/docs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/layouts/home.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/animate.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/autoheight.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/autoplay.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/autowidth.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/basic.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/center.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/demos.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/events.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/lazyLoad.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/merge.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/mousewheel.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/responsive.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/rtl.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/stagepadding.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/test.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/urlhashnav.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/demos/video.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/api-classes.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/api-events.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/api-options.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/dev-buildin-plugins.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/dev-external.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/dev-plugin-api.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/dev-styles.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/started-faq.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/started-installation.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/started-welcome.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/support-changelog.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/support-contact.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/docs/support-contributing.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/pages/index.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/footer.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/head.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/header.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/home-carousel.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/home-features.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/home-hero.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/home-teaser-text.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/javascripts.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/releated-docs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/sidenav-docs.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/title.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/docs_src/templates/partials/vendors.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/img/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/img/owl.video.play.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.animate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.autoheight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.autoplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.autorefresh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.hash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.lazyload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.support.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.support.modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/js/owl.video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_animate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_autoheight.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_core.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_lazyload.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_theme.default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_theme.green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_theme.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/_video.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/owl.carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/owl.theme.default.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/src/scss/owl.theme.green.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/test/unit/autoplay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/owlcarousel/test/unit/core.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/.sass-cache/2682bb39f0167257f5db2b3561a73494275088b2/_variables.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/.sass-cache/2682bb39f0167257f5db2b3561a73494275088b2/_variables.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/.sass-cache/dd7f21f67fbe9a6d6eeedaf338e87ca9435643ad/main.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/.sass-cache/dd7f21f67fbe9a6d6eeedaf338e87ca9435643ad/main.scssc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/css/main.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/scss/partials/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/scss/partials/_variables.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,37 +210,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="126" column="54" lean-forward="true" selection-start-line="126" selection-start-column="54" selection-end-line="126" selection-end-column="54" />
-              <folding>
-                <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#p#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-              </folding>
+            <state relative-caret-position="520">
+              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheets/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="232" column="13" lean-forward="true" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
+            <state relative-caret-position="155">
+              <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
               <folding>
-                <element signature="e#985#1033#0" />
-                <element signature="e#1042#1566#0" />
-                <element signature="e#1737#1785#0" />
-                <element signature="e#1795#2627#0" />
-                <element signature="e#3733#3749#0" />
+                <element signature="e#261#524#0" />
+                <element signature="e#526#556#0" />
+                <element signature="e#563#888#0" />
+                <element signature="e#1102#1633#0" />
+                <element signature="e#4341#5045#0" />
+                <element signature="e#5753#6451#0" />
               </folding>
             </state>
           </provider>
@@ -56,8 +248,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/scss/partials/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="234">
+              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -65,8 +257,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheets/scss/partials/_functions.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="234">
+              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -84,8 +276,8 @@
         <option value="$PROJECT_DIR$/scripts/jquery.js" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/stylesheets/scss/partials/_variables.scss" />
-        <option value="$PROJECT_DIR$/stylesheets/scss/main.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/stylesheets/scss/main.scss" />
       </list>
     </option>
   </component>
@@ -103,6 +295,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -149,20 +342,46 @@
               <item name="C:\Users\Shahzaib\Desktop\EZTaxi" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
+            <path>
+              <item name="EZTaxi" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Shahzaib\Desktop\EZTaxi" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="owlcarousel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="EZTaxi" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Shahzaib\Desktop\EZTaxi" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="owlcarousel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="EZTaxi" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="C:\Users\Shahzaib\Desktop\EZTaxi" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="vendor" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="owlcarousel" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Shahzaib\Desktop\EZTaxi\vendor" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,11 +409,12 @@
       <workItem from="1560938881783" duration="13745000" />
       <workItem from="1560975436740" duration="2521000" />
       <workItem from="1560981600692" duration="1690000" />
+      <workItem from="1561063930697" duration="4336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18187000" />
+    <option name="totallyTimeSpent" value="22523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -242,55 +462,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/owlcarousel/src/js/.jscsrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/scss/partials/_functions.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="234">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheets/scss/partials/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stylesheets/scss/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="232" column="13" lean-forward="true" selection-start-line="232" selection-start-column="13" selection-end-line="232" selection-end-column="13" />
-          <folding>
-            <element signature="e#985#1033#0" />
-            <element signature="e#1042#1566#0" />
-            <element signature="e#1737#1785#0" />
-            <element signature="e#1795#2627#0" />
-            <element signature="e#3733#3749#0" />
-          </folding>
+        <state relative-caret-position="234">
+          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="126" column="54" lean-forward="true" selection-start-line="126" selection-start-column="54" selection-end-line="126" selection-end-column="54" />
+        <state relative-caret-position="520">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stylesheets/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
           <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#nav#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#p#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#261#524#0" />
+            <element signature="e#526#556#0" />
+            <element signature="e#563#888#0" />
+            <element signature="e#1102#1633#0" />
+            <element signature="e#4341#5045#0" />
+            <element signature="e#5753#6451#0" />
           </folding>
         </state>
       </provider>
