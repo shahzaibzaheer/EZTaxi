@@ -458,7 +458,7 @@ section.about-section {
         text-align: center;
         margin-top: auto; }
     .section-pricing .card:hover {
-      transform: scale(1.05);
+      transform: scale(1.01);
       box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); }
 
 /*--------------- End Of Section Pricing----------------------------*/
@@ -489,13 +489,13 @@ section.our-products {
  ------------------------------------------*/
 footer {
   background: #343435;
-  max-width: 1000px;
   padding: 32px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
   footer .nav-items {
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -504,6 +504,7 @@ footer {
     footer .nav-items li {
       margin: 0 16px; }
   footer .social-links {
+    max-width: 1000px;
     margin-top: 16px;
     display: flex;
     align-items: center;

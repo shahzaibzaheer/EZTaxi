@@ -25,7 +25,6 @@ $(document).ready(function () {
         /* options are 'auto', 'fullwidth' or 'fullscreen' */
         sliderLayout: 'auto',
         gridheight: 350,
-
         responsiveLevels: [1240, 1024, 778, 480],
         gridwidth:[1240, 1024, 778, 480],
         gridheight:[450, 450, 450, 450],
@@ -56,6 +55,9 @@ $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
         responsiveClass:true,
         responsive:{
             0:{
@@ -69,10 +71,12 @@ $(document).ready(function () {
             1000:{
                 items:3,
                 nav:true,
-                loop:false
             }
         }
-    })
+    });
+    $('.owl-carousel').trigger('play.owl.autoplay',[2000]);
+
+
 
 
 });
