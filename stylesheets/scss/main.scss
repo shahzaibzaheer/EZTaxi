@@ -1,4 +1,6 @@
 @import "../../vendor/bootstrap/css/bootstrap.min.css";
+@import "../../vendor/owlcarousel/src/scss/owl.carousel";
+@import "../../vendor/owlcarousel/src/scss/owl.theme.default";
 @import "partials/variables";
 @import "partials/functions";
 
@@ -42,8 +44,8 @@ i{
     padding: get-padding(0.5) get-padding(2);
     border: 3px solid lighten($dark,30%);
     border-radius: 16px;
-    font-weight: bold;
-    font-size: 1.2em;
+    font-weight: 600;
+    font-size: 1em;
     color: $text-color-dark;
     text-align: center;
     &:hover{
@@ -188,9 +190,9 @@ i{
  ------------------------------------------*/
 section .rev_slider{
     border-radius: 0 0 5px 5px;
-    max-width: $max-width;
-    margin: 0 auto;
-    background: pink;
+    //max-width: $max-width;
+    //margin: 0 auto;
+    //background: pink;
     height: 300px;
     overflow: hidden;
     .tp-bullet{
@@ -205,49 +207,116 @@ section .rev_slider{
         color: white;
     }
 }
-
-
 /*--------------- End of Main Slider -----------------------------------*/
 
 
 
-/*--------------- Section About EZ TAXI
+/*--------------- Section Common Styles
  ------------------------------------------*/
-//section{
-//    width: 100vw;
-//    height: 100vh;
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    justify-content: center;
-//
-//    .section-heading{
-//        font-size: 2.5em;
-//        &:before{
-//            content: url("../../images/heading-before-img.png");
-//            padding: get-padding(2);
-//        }
-//        &:after{
-//            content: url("../../images/heading-before-img.png");
-//            padding: get-padding(2);
-//        }
-//
-//    }
-//
-//    .section-detail{
-//        max-width: $max-width;
-//        display: flex;
-//        align-items: center;
-//        justify-content: center;
-//
-//
-//        p{
-//            margin: get-margin(3) get-margin(2);
-//        }
-//    }
-//}
+section{
+    //overflow: hidden;
+    padding-top: get-padding(4);
 
-/*--------------- End Of Section About EZ TAXI----------------------------*/
+    .section-heading{
+        font-size: 3em;
+        font-weight: 800;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        &:before{
+            content: url("../../images/heading-before-img.png");
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            transform: scale(-1,-1);
+            padding-bottom:  get-padding(2);
+            margin-right: get-margin(2);
+        }
+
+        &:after{
+            content: url("../../images/heading-before-img.png");
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom:  get-padding(0.2);
+            margin-left: get-margin(2);
+        }
+
+        @media (max-width: 400px){
+            font-size: 1.5em;
+            &:before{
+                content: url("../../images/heading-before-img.png");
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(-0.6,-0.6);
+                padding-bottom:  get-padding(2);
+                margin:0 get-margin(1);
+            }
+
+            &:after{
+                content: url("../../images/heading-before-img.png");
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                transform: scale(0.6);
+                padding-top:  get-padding(2);
+                margin:0 get-margin(1);
+            }
+        }
+    }
+}
+/*--------------- End of Section Common Styles ------------------------*/
+
+
+
+
+
+
+/*--------------- About Section
+ ------------------------------------------*/
+section.about-section{
+    width: 100vw;
+    max-width: $max-width;
+    margin: 0 auto;
+    position: relative;
+    .img-container{
+        img{
+            width: 150px;
+
+            @media (min-width: 400px){
+                width: 300px;
+            }
+        }
+    }
+    .detail{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-transform: lowercase;
+        .content{
+            padding: get-padding(2);
+            max-width: 600px;
+
+        }
+
+    }
+
+    .anim_bus{
+        display: none;
+    }
+
+
+}
+/*--------------- End of About Section  ---------------*/
+
+
+
+
+
 
 
 
@@ -263,47 +332,154 @@ section .rev_slider{
 
 /*--------------- Section Pricing
  ------------------------------------------*/
-//
-//.section-pricing{
-//    background: $background-color-primary;
-//
-//    .nav-panel-tabs{
-//        display: flex;
-//        align-items: center;
-//        justify-content: center;
-//        li{
-//            font-weight: bold;
-//            font-size: 1.3em;
-//            margin: get-margin(1) get-margin(2);
-//
-//            a.active{
-//                @extend .btn;
-//            }
-//        }
-//    }
-//    .card{
-//        .card-body{
-//
-//            .btn-container{
-//                text-align: center;
-//            }
-//        }
-//    }
-//}
+.section-pricing{
+    background: $background-color-primary;
+    padding-bottom: get-padding(5);
+    .nav-panel-tabs{
+               display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        li{
+            font-weight: 600;
+            font-size: 1.1em;
+            margin: get-margin(4) get-margin(2);
+
+            a.active{
+                @extend .btn;
+                border: 3px solid $text-color-primary;
+            }
+        }
+    }
+    .tab-pane{
+        display: none;
+        &.active{
+            display: flex;
+        }
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        margin: get-margin(2);
+        transition: transform 0.3s;
+        .card-body{
+            display: flex;
+            flex-direction: column;
+
+            .btn-container{
+                text-align: center;
+                margin-top: auto;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 1px 1px 4px rgba(black,0.4);
+        }
+    }
+}
 
 /*--------------- End Of Section Pricing----------------------------*/
 
 
-
-#owl-products{
-    display: flex;
-    flex-direction: row;
-    background: red;
-
-    .item{
-        width: 100%;
+/*--------------- Section Our Products
+ ------------------------------------------*/
+section.our-products{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: get-padding(5) get-padding(1);
+    .products-container{
+        margin-top: get-padding(4);
+        div{
+            margin: 0 auto;
+        }
+    }
+    a{
+        display: block;
+        text-align: center;
+        margin: get-margin(2) 0;
+        font-weight: 600;
+        i{
+            transition: transform 0.5s;
+        }
+        &:hover{
+            color:$primary-color;
+            i{
+                transform: translateX(10px);
+            }
+        }
     }
 }
+/*--------------- End of Section Our Products ---------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- Footer
+ ------------------------------------------*/
+footer{
+    background: $text-color-dark;
+    max-width: $max-width;
+    padding: get-padding(4) get-padding(2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .nav-items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        list-style: none;
+        li{
+            margin: 0 get-margin(2);
+        }
+    }
+    .social-links{
+        margin-top: get-margin(2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i{
+            margin: 0 get-margin(1);
+        }
+    }
+}
+
+/*--------------- End of Footer  -----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+//
+//
+//#owl-products{
+//    display: flex;
+//    flex-direction: row;
+//    background: red;
+//
+//    .item{
+//        width: 100%;
+//    }
+//}
 
 
 
@@ -381,8 +557,52 @@ section .rev_slider{
         .navButtons{
         }
     }
+
 }
 
+@media (min-width: 850px) {
+    section.about-section{
+        width: 100vw;
+        max-width: $max-width;
+        height: 100vh;
+        margin: 0 auto;
+        position: relative;
+        .img-container{
+            img{
+                transition: transform 0.5s;
+                transform: scale(0.7);
+                &:hover{
+                    transform: scale(0.9);
+                }
+            }
+        }
+        .detail{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            text-transform: lowercase;
+            flex-direction: row;
+            .content{
+                padding: get-padding(2);
+
+            }
+
+        }
+
+        .anim_bus{
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 120px;
+            animation-name: bus-running-anim;
+            animation-duration: 3s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(.5,.31,.74,.13);
+        }
+    }
+}
 @media (min-width: 1099px) { // for nav bar
     .main-nav{
         max-width: $max-width;
@@ -418,6 +638,7 @@ section .rev_slider{
         }
 
     }
+
 }
 /*----------- End of Media Query for Main nav bar
 --------------------------------------------- */
@@ -448,5 +669,44 @@ section .rev_slider{
         flex-direction: row;
     }
 }
-/*--------------- End Of Media  Queries
+/*--------------- End Of Media  Queries ------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------- Keyframes aniamtions
  ------------------------------------------*/
+@keyframes bus-running-anim {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100vw);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

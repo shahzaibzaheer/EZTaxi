@@ -32,11 +32,10 @@ $(document).ready(function () {
 
         /* basic navigation arrows and bullets */
         navigation: {
-
             arrows: {
                 enable: true,
                 style: 'hesperiden',
-                hide_onleave: true,
+                hide_onleave: false,
             },
 
             bullets: {
@@ -51,6 +50,29 @@ $(document).ready(function () {
             }
         }
     });
+
+
+    // owl carousel
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:false
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:false
+            }
+        }
+    })
 
 
 });

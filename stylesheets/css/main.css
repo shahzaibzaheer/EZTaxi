@@ -1,4 +1,219 @@
 @import url(../../vendor/bootstrap/css/bootstrap.min.css);
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+  	This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+  	calculation of the height of the owl-item that breaks page layouts
+   */ }
+  .owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease; }
+  .owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+    max-height: 0; }
+  .owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d; }
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease; }
+.owl-carousel .owl-video-play-icon:hover {
+  transform: scale(1.3, 1.3); }
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }
+
 body {
   font-size: 16px; }
 
@@ -26,16 +241,16 @@ a {
 i {
   color: #fbb829; }
 
-.btn {
+.btn, .section-pricing .nav-panel-tabs li a.active {
   background: linear-gradient(to bottom, #ffe546 20%, #fbb829);
   padding: 4px 16px;
   border: 3px solid #808082;
   border-radius: 16px;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-weight: 600;
+  font-size: 1em;
   color: #343435;
   text-align: center; }
-  .btn:hover {
+  .btn:hover, .section-pricing .nav-panel-tabs li a.active:hover {
     border: 3px solid #343435;
     cursor: pointer;
     color: #343435; }
@@ -127,9 +342,6 @@ i {
  ------------------------------------------*/
 section .rev_slider {
   border-radius: 0 0 5px 5px;
-  max-width: 1000px;
-  margin: 0 auto;
-  background: pink;
   height: 300px;
   overflow: hidden; }
   section .rev_slider .tp-bullet {
@@ -141,19 +353,165 @@ section .rev_slider {
     color: white; }
 
 /*--------------- End of Main Slider -----------------------------------*/
-/*--------------- Section About EZ TAXI
+/*--------------- Section Common Styles
  ------------------------------------------*/
-/*--------------- End Of Section About EZ TAXI----------------------------*/
+section {
+  padding-top: 32px; }
+  section .section-heading {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; }
+    section .section-heading:before {
+      content: url("../../images/heading-before-img.png");
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      transform: scale(-1, -1);
+      padding-bottom: 16px;
+      margin-right: 16px; }
+    section .section-heading:after {
+      content: url("../../images/heading-before-img.png");
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1.6px;
+      margin-left: 16px; }
+    @media (max-width: 400px) {
+      section .section-heading {
+        font-size: 1.5em; }
+        section .section-heading:before {
+          content: url("../../images/heading-before-img.png");
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          transform: scale(-0.6, -0.6);
+          padding-bottom: 16px;
+          margin: 0 8px; }
+        section .section-heading:after {
+          content: url("../../images/heading-before-img.png");
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          transform: scale(0.6);
+          padding-top: 16px;
+          margin: 0 8px; } }
+
+/*--------------- End of Section Common Styles ------------------------*/
+/*--------------- About Section
+ ------------------------------------------*/
+section.about-section {
+  width: 100vw;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+  section.about-section .img-container img {
+    width: 150px; }
+    @media (min-width: 400px) {
+      section.about-section .img-container img {
+        width: 300px; } }
+  section.about-section .detail {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-transform: lowercase; }
+    section.about-section .detail .content {
+      padding: 16px;
+      max-width: 600px; }
+  section.about-section .anim_bus {
+    display: none; }
+
+/*--------------- End of About Section  ---------------*/
 /*--------------- Section Pricing
  ------------------------------------------*/
-/*--------------- End Of Section Pricing----------------------------*/
-#owl-products {
-  display: flex;
-  flex-direction: row;
-  background: red; }
-  #owl-products .item {
-    width: 100%; }
+.section-pricing {
+  background: linear-gradient(to right, #ffe546, #fbb829);
+  padding-bottom: 40px; }
+  .section-pricing .nav-panel-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .section-pricing .nav-panel-tabs li {
+      font-weight: 600;
+      font-size: 1.1em;
+      margin: 32px 16px; }
+      .section-pricing .nav-panel-tabs li a.active {
+        border: 3px solid #343435; }
+  .section-pricing .tab-pane {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .section-pricing .tab-pane.active {
+      display: flex; }
+  .section-pricing .card {
+    margin: 16px;
+    transition: transform 0.3s; }
+    .section-pricing .card .card-body {
+      display: flex;
+      flex-direction: column; }
+      .section-pricing .card .card-body .btn-container {
+        text-align: center;
+        margin-top: auto; }
+    .section-pricing .card:hover {
+      transform: scale(1.05);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4); }
 
+/*--------------- End Of Section Pricing----------------------------*/
+/*--------------- Section Our Products
+ ------------------------------------------*/
+section.our-products {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 8px; }
+  section.our-products .products-container {
+    margin-top: 32px; }
+    section.our-products .products-container div {
+      margin: 0 auto; }
+  section.our-products a {
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+    font-weight: 600; }
+    section.our-products a i {
+      transition: transform 0.5s; }
+    section.our-products a:hover {
+      color: #fbb829; }
+      section.our-products a:hover i {
+        transform: translateX(10px); }
+
+/*--------------- End of Section Our Products ---------------------*/
+/*--------------- Footer
+ ------------------------------------------*/
+footer {
+  background: #343435;
+  max-width: 1000px;
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  footer .nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    list-style: none; }
+    footer .nav-items li {
+      margin: 0 16px; }
+  footer .social-links {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    footer .social-links i {
+      margin: 0 8px; }
+
+/*--------------- End of Footer  -----------------------------*/
 /*----------- Media querisFor Main nav bar
 --------------------------------------------- */
 @media (max-width: 599px) {
@@ -177,7 +535,7 @@ section .rev_slider {
     .nav-items.open {
       transform: translateX(0); }
 
-  .btn {
+  .btn, .section-pricing .nav-panel-tabs li a.active {
     margin: 16px 0;
     order: 1;
     flex-basis: 100%; } }
@@ -197,6 +555,37 @@ section .rev_slider {
       .main-nav .nav-items li {
         padding: 8px;
         font-weight: bold; } }
+@media (min-width: 850px) {
+  section.about-section {
+    width: 100vw;
+    max-width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative; }
+    section.about-section .img-container img {
+      transition: transform 0.5s;
+      transform: scale(0.7); }
+      section.about-section .img-container img:hover {
+        transform: scale(0.9); }
+    section.about-section .detail {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-transform: lowercase;
+      flex-direction: row; }
+      section.about-section .detail .content {
+        padding: 16px; }
+    section.about-section .anim_bus {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 120px;
+      animation-name: bus-running-anim;
+      animation-duration: 3s;
+      animation-fill-mode: both;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.5, 0.31, 0.74, 0.13); } }
 @media (min-width: 1099px) {
   .main-nav {
     max-width: 1000px;
@@ -226,7 +615,13 @@ section .rev_slider {
 @media (min-width: 599px) {
   .top-bar {
     flex-direction: row; } }
-/*--------------- End Of Media  Queries
+/*--------------- End Of Media  Queries ------------------------------------------*/
+/*--------------- Keyframes aniamtions
  ------------------------------------------*/
+@keyframes bus-running-anim {
+  from {
+    transform: translateX(100%); }
+  to {
+    transform: translateX(-100vw); } }
 
 /*# sourceMappingURL=main.css.map */
