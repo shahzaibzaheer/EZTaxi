@@ -10,30 +10,55 @@
     <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
     <link rel="stylesheet" href="stylesheets/css/main.css">
 
+
+
+    <!-- Slider Revolution CSS Files -->
+    <link rel="stylesheet" type="text/css" href="vendor/revSlider/revolution/css/settings.css">
+    <link rel="stylesheet" type="text/css" href="vendor/revSlider/revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="vendor/revSlider/revolution/css/navigation.css">
+    <!-- Core jQuery Script -->
+    <script type="text/javascript" src="vendor/jquery/jquery.js"></script>
+
+    <!-- Slider Revolution core JavaScript files -->
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!--TODO: remove extension sripts when ready to deploy-->
+    <!-- Slider Revolution extension scripts. ONLY NEEDED FOR LOCAL TESTING -->
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="vendor/revSlider/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+
 </head>
 <body>
-
-    <nav class="top-bar-container">
+        <nav class="top-bar-container">
         <div class="top-bar">
             <div class="contact-info">
                 <a href="mailto:easytaxi@hotmail.com" class="info-item">
                     <i class="fa fa-envelope"></i>
-                    <span>easytaxi@hotmail.com</span>
+                    <span> easytaxi@hotmail.com</span>
                 </a>
                 <a href="tel:123456789" class="info-item">
                     <i class="fa fa-phone-alt"></i>
-                    <span>+92123456789</span>
+                    <span> +92123456789</span>
                 </a>
             </div>
             <div class="social-links">
+                <i class="btn btn-sm"><a href="">عربى</a></i>
                 <i class="fab fa-instagram icon"></i>
                 <i class="fab fa-facebook-f icon"></i>
                 <i class="fab fa-twitter icon"></i>
             </div>
         </div>
     </nav>
-
-    <nav class="main-nav-container ">
+        <nav class="main-nav-container ">
         <div class="main-nav">
             <img src="images/logo.png" class="logo" alt="">
         <!--    open-->
@@ -49,15 +74,33 @@
 
             </ul>
             <div class="navButtons">
-                <a href="" class="btn">عربى</a>
+
             </div>
 
             <i class="fa fa-bars" id="navOpenBtn"></i>
         </div>
         <div class="header-strip"></div>
     </nav>
+    <section class="main-slider ">
+        <!-- the ID here will be used in the JavaScript below to initialize the slider -->
+        <div id="main_rev_slider" class="rev_slider " data-version="5.4.1" style="display:none">
+            <ul>
+                <li>
+                    <img src="images/b111.jpg" alt="Sky" class="rev-slidebg">
+                </li>
+                <li>
+                    <img src="images/b222.jpg" alt="Sky" class="rev-slidebg">
+                </li>
+                <li>
+                    <img src="images/b333.jpg" alt="Sky" class="rev-slidebg">
+                </li>
+                <li>
+                    <img src="images/b555.jpg" alt="Sky" class="rev-slidebg">
+                </li>
 
-
+            </ul>
+        </div>
+    </section>
 
 
 <!--    <section >-->
@@ -146,7 +189,6 @@
 <!--    </section>-->
 
 
-    <script src="scripts/jquery.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>

@@ -51,6 +51,12 @@ i{
         cursor: pointer;
         color: $text-color-dark;
     }
+
+    &-sm{
+        padding: get-padding(0.5) get-padding(2);
+        font-size: 0.8em;
+        margin: 0 get-margin(1);
+    }
 }
 
 
@@ -79,6 +85,11 @@ i{
 
         .info-item{
             margin: 0 get-margin(1);
+            display: flex;
+            align-items: center;
+            i{
+                margin: 0 get-margin(0.5);
+            }
             &:hover{
                 color: $primary-color;
             }
@@ -86,6 +97,8 @@ i{
     }
     .social-links{
         margin: get-margin(0.6) 0;
+        display: flex;
+        align-items: center;
     }
 }
 /*--------------- End Of Top Bar Styles ---------*/
@@ -104,10 +117,10 @@ i{
 
 /*--------------- Main Nav Bar Styles
  ------------------------------------------*/
+
 .main-nav-container{
     background: $background-color-primary;
     position: relative;
-
 
     .header-strip {
         background-image: linear-gradient(45deg, rgb(0, 0, 0) 25%, transparent 25%, transparent 75%, black 75%, black),
@@ -167,6 +180,34 @@ i{
 
 
 
+
+
+
+
+/*--------------- Main Slider
+ ------------------------------------------*/
+section .rev_slider{
+    border-radius: 0 0 5px 5px;
+    max-width: $max-width;
+    margin: 0 auto;
+    background: pink;
+    height: 300px;
+    overflow: hidden;
+    .tp-bullet{
+        background: $primary-color;
+        border: 1px solid white;
+
+        &.selected{
+            background: black;
+        }
+    }
+    .tparrows:before{
+        color: white;
+    }
+}
+
+
+/*--------------- End of Main Slider -----------------------------------*/
 
 
 

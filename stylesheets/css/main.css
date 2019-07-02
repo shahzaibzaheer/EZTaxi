@@ -39,6 +39,10 @@ i {
     border: 3px solid #343435;
     cursor: pointer;
     color: #343435; }
+  .btn-sm {
+    padding: 4px 16px;
+    font-size: 0.8em;
+    margin: 0 8px; }
 
 /*--------------- Top Bar Styles
  ------------------------------------------*/
@@ -59,11 +63,17 @@ i {
     flex-direction: column;
     align-items: center; }
     .top-bar .contact-info .info-item {
-      margin: 0 8px; }
+      margin: 0 8px;
+      display: flex;
+      align-items: center; }
+      .top-bar .contact-info .info-item i {
+        margin: 0 4px; }
       .top-bar .contact-info .info-item:hover {
         color: #fbb829; }
   .top-bar .social-links {
-    margin: 4.8px 0; }
+    margin: 4.8px 0;
+    display: flex;
+    align-items: center; }
 
 /*--------------- End Of Top Bar Styles ---------*/
 /*--------------- Main Nav Bar Styles
@@ -113,6 +123,24 @@ i {
         flex-basis: 100%; } }
 
 /*--------------- End Of Nav Bar Styles ----------------------------*/
+/*--------------- Main Slider
+ ------------------------------------------*/
+section .rev_slider {
+  border-radius: 0 0 5px 5px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: pink;
+  height: 300px;
+  overflow: hidden; }
+  section .rev_slider .tp-bullet {
+    background: #fbb829;
+    border: 1px solid white; }
+    section .rev_slider .tp-bullet.selected {
+      background: black; }
+  section .rev_slider .tparrows:before {
+    color: white; }
+
+/*--------------- End of Main Slider -----------------------------------*/
 /*--------------- Section About EZ TAXI
  ------------------------------------------*/
 /*--------------- End Of Section About EZ TAXI----------------------------*/
