@@ -240,6 +240,8 @@ a {
 
 i {
   color: #fbb829; }
+  i:hover {
+    cursor: pointer; }
 
 .btn, .section-pricing .nav-panel-tabs li a.active {
   background: linear-gradient(to bottom, #ffe546 20%, #fbb829);
@@ -305,6 +307,7 @@ i {
 .main-nav {
   text-transform: uppercase;
   font-size: 0.9em;
+  font-weight: 400;
   max-width: 1000px;
   margin: 0 auto;
   display: flex;
@@ -328,6 +331,28 @@ i {
     font-size: 1.2em;
     list-style: none;
     display: flex; }
+    .main-nav .nav-items li {
+      position: relative;
+      padding: 10px 0; }
+      .main-nav .nav-items li:hover {
+        cursor: pointer;
+        font-weight: bold; }
+        .main-nav .nav-items li:hover:after {
+          transform-origin: bottom left;
+          transform: scaleX(1); }
+      .main-nav .nav-items li:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: black;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s; }
+    .main-nav .nav-items .active {
+      font-weight: bold; }
   .main-nav .navButtons {
     display: flex;
     justify-content: center;
@@ -340,23 +365,25 @@ i {
 /*--------------- End Of Nav Bar Styles ----------------------------*/
 /*--------------- Main Slider
  ------------------------------------------*/
-section .rev_slider {
+div .rev_slider {
   border-radius: 0 0 5px 5px;
   height: 300px;
   overflow: hidden; }
-  section .rev_slider .tp-bullet {
+  div .rev_slider .tp-bullet {
     background: #fbb829;
     border: 1px solid white; }
-    section .rev_slider .tp-bullet.selected {
+    div .rev_slider .tp-bullet:before {
+      z-index: 22; }
+    div .rev_slider .tp-bullet.selected {
       background: black; }
-  section .rev_slider .tparrows:before {
+  div .rev_slider .tparrows:before {
     color: white; }
 
 /*--------------- End of Main Slider -----------------------------------*/
 /*--------------- Section Common Styles
  ------------------------------------------*/
 section {
-  padding-top: 32px; }
+  padding-top: 64px; }
   section .section-heading {
     font-size: 3em;
     font-weight: 800;
@@ -412,8 +439,9 @@ section.about-section {
     width: 150px; }
     @media (min-width: 400px) {
       section.about-section .img-container img {
-        width: 300px; } }
+        width: 500px; } }
   section.about-section .detail {
+    margin: 40px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -435,11 +463,12 @@ section.about-section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 16px 0; }
     .section-pricing .nav-panel-tabs li {
       font-weight: 600;
       font-size: 1.1em;
-      margin: 32px 16px; }
+      margin: 8px 16px; }
       .section-pricing .nav-panel-tabs li a.active {
         border: 3px solid #343435; }
   .section-pricing .tab-pane {
@@ -521,6 +550,7 @@ footer {
     color: #fff;
     position: fixed;
     top: 0;
+    z-index: 9999;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -530,9 +560,12 @@ footer {
     width: 80vw;
     padding: 0 16px;
     flex-wrap: wrap;
+    transition: transform 0.3s ease-in;
     transform: translateX(100%); }
     .nav-items li {
       margin: 16px 0; }
+      .nav-items li:hover:after {
+        background-color: white; }
     .nav-items.open {
       transform: translateX(0); }
 
@@ -554,8 +587,7 @@ footer {
       align-items: center;
       justify-content: center; }
       .main-nav .nav-items li {
-        padding: 8px;
-        font-weight: bold; } }
+        padding: 8px; } }
 @media (min-width: 850px) {
   section.about-section {
     width: 100vw;

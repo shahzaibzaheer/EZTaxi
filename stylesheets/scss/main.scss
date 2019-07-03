@@ -36,6 +36,9 @@ a{
 }
 i{
     color: $primary-color;
+    &:hover{
+        cursor: pointer;
+    }
 }
 
 
@@ -135,6 +138,7 @@ i{
 .main-nav{
     text-transform: uppercase;
     font-size: 0.9em;
+    font-weight: 400;
     max-width: $max-width;
     margin: 0 auto;
     display: flex;
@@ -162,6 +166,35 @@ i{
         font-size: 1.2em;
         list-style: none;
         display: flex;
+
+        li{
+            position: relative;
+            padding: 10px 0;
+
+            &:hover{
+                cursor: pointer;
+                font-weight: bold;
+                &:after {
+                    transform-origin: bottom left;
+                    transform: scaleX(1);
+                }
+            }
+            &:after {
+                content:'';
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+                transform: scaleX(0);
+                transform-origin: bottom right;
+                transition: transform 0.3s;
+            }
+        }
+        .active {
+            font-weight: bold;
+        }
     }
 
     .navButtons{
@@ -188,7 +221,7 @@ i{
 
 /*--------------- Main Slider
  ------------------------------------------*/
-section .rev_slider{
+div .rev_slider{
     border-radius: 0 0 5px 5px;
     //max-width: $max-width;
     //margin: 0 auto;
@@ -198,7 +231,9 @@ section .rev_slider{
     .tp-bullet{
         background: $primary-color;
         border: 1px solid white;
-
+        &:before{
+            z-index: 22;
+        }
         &.selected{
             background: black;
         }
@@ -215,7 +250,7 @@ section .rev_slider{
  ------------------------------------------*/
 section{
     //overflow: hidden;
-    padding-top: get-padding(4);
+    padding-top: get-padding(8);
 
     .section-heading{
         font-size: 3em;
@@ -287,11 +322,12 @@ section.about-section{
             width: 150px;
 
             @media (min-width: 400px){
-                width: 300px;
+                width: 500px;
             }
         }
     }
     .detail{
+        margin: get-margin(5) 0;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -336,14 +372,16 @@ section.about-section{
     background: $background-color-primary;
     padding-bottom: get-padding(5);
     .nav-panel-tabs{
-               display: flex;
+
+        display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        margin: get-margin(2) 0;
         li{
             font-weight: 600;
             font-size: 1.1em;
-            margin: get-margin(4) get-margin(2);
+            margin: get-margin(1) get-margin(2);
 
             a.active{
                 @extend .btn;
@@ -500,6 +538,7 @@ footer{
         color: $text-color-light;
         position: fixed;
         top: 0;
+        z-index: 9999;
         //padding: get-padding(10) get-padding(4);
         align-items: center;
         justify-content: center;
@@ -514,7 +553,13 @@ footer{
         flex-wrap: wrap;
         li{
             margin: get-margin(2) 0;
+            &:hover{
+                &:after{
+                    background-color: white;
+                }
+            }
         }
+        transition: transform 0.3s ease-in;
         transform: translateX(100%);
 
         &.open{
@@ -552,7 +597,6 @@ footer{
             //}
             li{
                 padding: get-padding(1);
-                font-weight: bold;
             }
         }
         .navButtons{
